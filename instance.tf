@@ -1,9 +1,24 @@
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = ">= 2.7.0"
+    }
+  }
+}
+
+provider "aws" {
+  region = "us-east-2"
+}
+
 module first_module{
     source = ./modules/first_module
 
-    availability_zone
-    name_tag
-    project_number
-    project_name = 
+    availability_zone = "use2-az1"
+    name_tag =  "frontendserver"
+    project_number = "199119"
+    project_name = "frontend"
+    instance_type = "t3.micro"
+    ami = "ami-085f9c64a9b75eed5"
 
 }
