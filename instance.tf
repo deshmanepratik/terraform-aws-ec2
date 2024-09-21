@@ -14,7 +14,7 @@ provider "aws" {
 module first_module{
     source = ./modules/first_module
 
-    availability_zone = "use2-az1"
+    availability_zone = "us-east-1c"
     name_tag =  "frontendserver"
     project_number = "199119"
     project_name = "frontend"
