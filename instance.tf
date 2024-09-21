@@ -11,9 +11,9 @@ provider "aws" {
   region = "us-east-2"
 }
 
-module first_module{
-    source = ./modules/first_module
-
+module "first_module" {
+    source = "./modules/first_module"
+    
     availability_zone = "us-east-1c"
     name_tag =  "frontendserver"
     project_number = "199119"
