@@ -19,6 +19,6 @@ module "first_module" {
     project_number = "199119"
     project_name = "frontend"
     instance_type = "t3.micro"
-    ami = "ami-085f9c64a9b75eed5"
+    ami = "ami-0e86e20dae9224db8"
 
 }
